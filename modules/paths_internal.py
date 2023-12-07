@@ -5,7 +5,7 @@ import os
 import sys
 import shlex
 
-commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
+commandline_args = os.environ.get('COMMANDLINE_ARGS', "--xformers")
 sys.argv += shlex.split(commandline_args)
 
 modules_path = os.path.dirname(os.path.realpath(__file__))
